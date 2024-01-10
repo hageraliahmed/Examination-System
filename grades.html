@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grades page</title>
+    <link rel="stylesheet" href="firstproject.css">
+</head>
+<body>
+ 
+<!-- grades page -->
+<div id="gradesPage">
+<h2 id="gradeh2"></h2><br><br><br><br>
+<div id="circularprogressbar">
+<div id="outer">
+<div id="inner">
+<div id="number">
+0%
+</div>
+</div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg"version="1.1" width="220px" height="220px">
+    <defs>
+        <linearGradient id="GradientColor">
+          <stop offset="0%" stop-color="#D65DB1" />
+          <stop offset="100%" stop-color="#88006A"/>
+        </linearGradient>
+    </defs>
+    <circle id="mycircle" cx="110" cy="110" r="99" stroke-linecap="round"/>
+</svg>
+</div>
+<button id="tryagain" onclick="tryAgainFun()">Try Again</button>
+<button id="Reviewanswers">Review Answers</button>
+</div>
+
+
+<script src="grades.js"></script>      
+</body>
+</html>

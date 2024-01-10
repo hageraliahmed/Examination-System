@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam page</title>
+    <link rel="stylesheet" href="firstproject.css">
+</head>
+<body>
+ 
+    <!-- exam page -->
+<progress id="timeprogress" value="0" max="900"></progress><br>
+
+<div id="container">
+    <div id="ExamInfo">
+        <div id="category">English test</div>
+        <div id="time">
+            <span class="minutesSpan"></span> :  <span class="SecondsSpan"></span> 
+        </div>
+        <div id="quesCount">Number of questions : 10</div>
+    </div>
+<div id="exammarkcontainer">
+<div id="exam">
+<div id="questionh"></div>
+<input type="radio" id="answer1radio" name="answer" onclick="savedAnswer(0)"><label id="answerla1" for="answer1radio"></label><br>
+<input type="radio" id="answer2radio" name="answer" onclick="savedAnswer(1)"><label id="answerla2" for="answer2radio"></label><br>
+<input type="radio" id="answer3radio" name="answer" onclick="savedAnswer(2)"><label id="answerla3" for="answer3radio"></label><br>
+<input type="radio" id="answer4radio" name="answer" onclick="savedAnswer(3)"><label id="answerla4" for="answer4radio"></label><br>
+<div id="prenexmarkdiv">
+<button id="previousbutton">Previous</button>
+<div id="qnumbers">1</div>
+<button id="nextbutton">Next</button>
+<button id="markbutton">Mark</button>
+<button id="unmarkbutton">Un mark</button>
+</div>
+<button id="submitquesbutton">Submit</button>
+</div>
+<div id="marklist"></div>
+</div>   
+</div>
+
+
+<script src="exam.js"></script>      
+</body>
+</html>
