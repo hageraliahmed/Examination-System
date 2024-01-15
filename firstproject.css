@@ -74,6 +74,7 @@ body{
 }
 #registerationsubmit:hover{
     background: #88006A;
+    color: white;
   }
 #registration span{
     color: red;
@@ -152,6 +153,7 @@ body{
 }
 #signinbutton:hover{
     background: #88006A;
+    color: white;
   }
   #signin span{
     color: red;
